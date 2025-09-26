@@ -31,6 +31,7 @@ The Sol Vida Kitchen platform uses three coordinated domains to separate focus a
 
 ![Sol Vida Kitchen Architecture](/docs/solvidakitchen-architecture.png)
 
+
 ---
 
 ## Related Domains
