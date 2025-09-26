@@ -21,6 +21,18 @@ Sol Vida Kitchen™ is focused on applying AI + RPA to food and kitchen manageme
 
 ---
 
+## Architecture Overview
+
+The Sol Vida Kitchen platform uses three coordinated domains to separate focus areas:
+
+- **solvidakitchen.com** → Customer landing site, brand introduction, fresh ideas  
+- **solvidakitchen.ai** → Technical showcase for AI + RPA demos and portfolio  
+- **solvidakitchen.app** → Updates hub with posts, announcements, and progress  
+
+![Sol Vida Kitchen Architecture](/docs/solvidakitchen-architecture.png)
+
+---
+
 ## Related Domains
 - [solvidakitchen.com](https://solvidakitchen.com) — Main landing page (Coming Soon)  
 - [solvidakitchen.ai](https://solvidakitchen.ai) — AI/RPA technical showcase  
