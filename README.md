@@ -1,36 +1,32 @@
 # solvidakitchen.app
 
-**Sol Vida Kitchen LLC** — An AI + RPA automation project applying intelligent workflows to food and kitchen management.  
+**Sol Vida Kitchen™** — Project Hub & Showcase  
 
-This project is the **.app showcase site** for Sol Vida Kitchen, designed to share updates, demos, and progress on applying automation and artificial intelligence to real-world food operations.
+This repository powers the [solvidakitchen.app](https://solvidakitchen.app) domain.  
+It serves as the **updates and documentation hub** for Sol Vida Kitchen, sharing demos, progress notes, and architectural insights.  
 
 ---
 
 ## Overview
-Sol Vida Kitchen™ is focused on:
-- **Menu automation** (catalogs, pricing, updates)
-- **Order processing** (streamlined with RPA workflows)
-- **Demand forecasting** using AI/NLP + cloud analytics
-- **Scalable cloud infrastructure** for reliability and CI/CD automation
+Sol Vida Kitchen™ is focused on applying AI + RPA to food and kitchen management:  
+- **Menu automation** (catalogs, pricing, updates)  
+- **Order processing** (RPA-driven workflows)  
+- **Demand forecasting** (AI/NLP + analytics)  
+- **Cloud automation** (CI/CD pipelines for reliability)  
 
 ---
 
 ## Status
-🚧 **In progress** — Landing page and initial architecture setup.  
-Check back soon for live demos, documentation, and release notes.
+🚧 In progress — Updates, documentation, and architecture notes will appear here.  
 
 ---
 
 ## Related Domains
-- 🌐 [solvidakitchen.com](https://solvidakitchen.com) — Main site (Coming Soon page)  
-- 🌐 [solvidakitchen.ai](https://solvidakitchen.ai) — AI/RPA technical showcase  
-- 🌐 [solvidakitchen.app](https://solvidakitchen.app) — This repo  
+- [solvidakitchen.com](https://solvidakitchen.com) — Main landing page (Coming Soon)  
+- [solvidakitchen.ai](https://solvidakitchen.ai) — AI/RPA technical showcase  
+- [solvidakitchen.app](https://solvidakitchen.app) — This repo  
 
 ---
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 © 2025 **Sol Vida Kitchen LLC** | All rights reserved
