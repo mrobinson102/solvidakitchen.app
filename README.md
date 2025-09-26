@@ -1,48 +1,24 @@
-# solvidakitchen.app
+# Sol Vida Kitchen (.app)
 
-**Sol Vida Kitchen™** — Project Hub & Showcase  
+**Sol Vida Kitchen™ — Updates Hub**  
 
-This repository powers the [solvidakitchen.app](https://solvidakitchen.app) domain.  
-It serves as the **updates and documentation hub** for Sol Vida Kitchen, sharing demos, progress notes, and architectural insights.  
-
----
-
-## Overview
-Sol Vida Kitchen™ is focused on applying AI + RPA to food and kitchen management:  
-- **Menu automation** (catalogs, pricing, updates)  
-- **Order processing** (RPA-driven workflows)  
-- **Demand forecasting** (AI/NLP + analytics)  
-- **Cloud automation** (CI/CD pipelines for reliability)  
+This repository powers the [solvidakitchen.app](https://solvidakitchen.app) site, which serves as our **news and updates hub**.  
+It shares progress announcements, release notes, and ongoing development insights for the Sol Vida Kitchen platform.  
 
 ---
 
-## Status
-🚧 In progress — Updates, documentation, and architecture notes will appear here.  
-
----
-
-## Architecture Overview
-
-The Sol Vida Kitchen platform uses three coordinated domains to separate focus areas:
-
-- **solvidakitchen.com** → Customer landing site, brand introduction, fresh ideas  
-- **solvidakitchen.ai** → Technical showcase for AI + RPA demos and portfolio  
-- **solvidakitchen.app** → Updates hub with posts, announcements, and progress  
-
-<p align="center">
-  <img src="docs/solvidakitchen-architecture.png" alt="Sol Vida Kitchen Architecture Diagram" width="600"/>
-</p>
-
-
+## Purpose
+- Provide **updates** on project milestones and progress.  
+- Share **news posts** about automation, AI features, and upcoming releases.  
+- Act as a hub for **community and stakeholder updates**.  
 
 ---
 
 ## Related Domains
-- [solvidakitchen.com](https://solvidakitchen.com) — Main landing page (Coming Soon)  
+- [solvidakitchen.com](https://solvidakitchen.com) — Customer landing page, brand-first experience  
 - [solvidakitchen.ai](https://solvidakitchen.ai) — AI/RPA technical showcase  
-- [solvidakitchen.app](https://solvidakitchen.app) — This repo  
+- [solvidakitchen.app](https://solvidakitchen.app) — Updates hub (this repo)  
 
 ---
 
-## License
 © 2025 **Sol Vida Kitchen LLC** | All rights reserved
