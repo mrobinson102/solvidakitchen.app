@@ -1,57 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sol Vida Kitchen – Project Updates</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sol Vida Kitchen – Updates & Menu</title>
+
+  <!-- Earth & Warm palette + fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#7c0e0c" />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #FF758C, #FF7EB3);
-      color: #fff;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    :root{
+      --sand:#f9f4ed; --maroon:#7c0e0c; --gold:#d4b272; --ink:#2b2b2b; --ink-soft:#5a5a5a;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    p { max-width: 650px; font-size: 1.2rem; line-height: 1.5; }
-    .button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #fff;
-      color: #FF758C;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: 0.3s;
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family:'Lato',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      background:var(--sand);
+      color:var(--ink);
+      display:grid; place-items:center; padding:24px;
     }
-    .button:hover { background: #ddd; }
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9rem;
-      opacity: 0.8;
+    .wrap{
+      width:min(980px,100%); background:var(--sand);
+      border:1px solid rgba(0,0,0,.06);
+      box-shadow:0 12px 28px rgba(0,0,0,.06);
+      border-radius:18px; overflow:hidden;
     }
+    .cover{
+      padding:56px 40px;
+      background:linear-gradient(180deg, rgba(124,14,12,.94), rgba(124,14,12,.88));
+      color:#fff; text-align:center;
+    }
+    .logo{
+      width:120px;height:120px;margin:0 auto 16px;border-radius:999px;
+      background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.25);
+      display:grid;place-items:center;font-family:'Playfair Display',serif;letter-spacing:.4px;
+    }
+    h1{font-family:'Playfair Display',serif;font-weight:700;font-size:40px;margin:8px 0 4px}
+    .sub{opacity:.95}
+    .body{padding:28px 34px}
+    h2{font-family:'Playfair Display',serif;font-weight:700;margin:0 0 10px}
+    p{margin:8px 0;color:var(--ink-soft)}
+    .cta{
+      margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .btn{
+      appearance:none; border-radius:999px; border:1px solid var(--maroon);
+      padding:12px 18px; font-weight:700; letter-spacing:.2px; cursor:pointer;
+      background:var(--maroon); color:#fff; text-decoration:none;
+    }
+    .btn.alt{background:transparent; color:var(--maroon)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px 0}
+    footer{padding:18px 34px 28px; font-size:12px; color:#6a6a6a; text-align:center}
   </style>
 </head>
 <body>
-  <h1>Sol Vida Kitchen™</h1>
-  <h2>Project Updates & Roadmap</h2>
-  <p>
-    This is the Sol Vida Kitchen™ <strong>update hub</strong>. Here we’ll share
-    development milestones, architecture diagrams, and live demos of our AI + RPA
-    powered kitchen solutions. Follow along as the project grows.
-  </p>
-  <a href="https://solvidakitchen.com" class="button">Visit Main Site</a>
-  <footer>
-  <p>© 2025 Sol Vida Kitchen LLC | All rights reserved</p>
-  <p><em>Sol Vida Kitchen™ — Smarter kitchens, powered by AI + RPA automation.</em></p>
-</footer>
+  <div class="wrap">
+    <section class="cover">
+      <div class="logo" id="logo">LOGO</div>
+      <h1>Sol Vida Kitchen™</h1>
+      <p class="sub">Project Updates • Menu • Flavor System</p>
+    </section>
 
+    <section class="body">
+      <h2>Project Updates & Roadmap</h2>
+      <p>
+        This is the Sol Vida Kitchen™ update hub. We share development milestones,
+        architecture diagrams, and live demos of our AI + RPA powered operations.
+      </p>
+
+      <div class="cta">
+        <!-- Opens your new printed menu page -->
+        <a class="btn" href="./menu.html">View & Print Menu</a>
+        <!-- Link to your main marketing site -->
+        <a class="btn alt" href="https://solvidakitchen.com" target="_blank" rel="noopener">Visit Main Site</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2>For Crew</h2>
+      <p>
+        Print tip: in Chrome, enable <strong>Background graphics</strong> to keep the sand
+        and maroon theme on paper.
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Sol Vida Kitchen LLC • Sol Vida Kitchen™ | Deming, NM | Confidential – Internal Use Only
+    </footer>
+  </div>
+
+  <script>
+    // Swap in your real logo if present at docs/assets/sol-vida-logo.png
+    const logo = document.getElementById('logo');
+    const imgPath = './assets/sol-vida-logo.png';
+    const img = new Image();
+    img.onload = () => {
+      logo.style.background = `url('${imgPath}') center/cover no-repeat`;
+      logo.style.border = 'none';
+      logo.textContent = '';
+    };
+    img.src = imgPath;
+  </script>
 </body>
 </html>
