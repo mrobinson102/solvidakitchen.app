@@ -1,37 +1,29 @@
-:root{--sand:#f9f4ed;--maroon:#7c0e0c;--gold:#d4b272;--ink:#2b2b2b;--ink-soft:#585858}
-html,body{margin:0;padding:0;background:var(--sand);color:var(--ink);
-  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-  font-family:'Lato',system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-.page{max-width:900px;margin:24px auto 64px;background:var(--sand);
-  box-shadow:0 0 0 1px rgba(0,0,0,.04),0 10px 30px rgba(0,0,0,.05);
-  border-radius:18px;overflow:hidden}
-.cover{position:relative;padding:56px 40px 48px;
-  background:linear-gradient(180deg, rgba(124,14,12,.94), rgba(124,14,12,.88));
-  color:#fff}
-.logo{width:120px;height:120px;border-radius:999px;background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;
-  font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.5px;margin-bottom:20px}
-.cover h1{font-family:'Playfair Display',serif;font-weight:700;font-size:42px;line-height:1.15;margin:0 0 4px}
-.cover .sub{margin:6px 0 0;opacity:.95;font-weight:300;letter-spacing:.2px}
-.meta-footer{margin-top:18px;font-size:12px;opacity:.9}
-.section{padding:28px 40px 16px;background:var(--sand)}
-.eyebrow{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--maroon);font-weight:700;margin-bottom:6px}
-.section h2{display:inline-block;font-family:'Playfair Display',serif;font-weight:700;font-size:28px;margin:0 0 8px;color:var(--ink);
-  border-bottom:4px solid var(--maroon);padding-bottom:6px}
-.divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px 0 8px}
-.grid{display:grid;gap:16px;padding:0 40px 28px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:16px 16px 14px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
-.card h3{margin:0 0 6px;font-family:'Playfair Display',serif;font-size:20px;color:var(--maroon)}
-.card .desc{color:var(--ink-soft);font-size:14px;margin-bottom:6px}
-.meta{font-size:12px;color:#7a7a7a;margin-bottom:10px}
-.subhead{font-weight:700;margin:10px 0 6px;color:var(--ink)}
-ul,ol{margin:6px 0 10px 18px} li{margin:3px 0}
-.toolbar{position:sticky;top:0;z-index:20;display:flex;gap:8px;justify-content:center;align-items:center;
-  padding:10px;background:rgba(249,244,237,.75);backdrop-filter:blur(6px);border-bottom:1px solid rgba(0,0,0,.07)}
-.btn{appearance:none;outline:none;cursor:pointer;user-select:none;border-radius:999px;border:1px solid var(--maroon);
-  padding:10px 16px;font-weight:700;letter-spacing:.3px;color:#fff;background:var(--maroon)}
-.btn.alt{background:transparent;color:var(--maroon)}
-footer{padding:22px 40px 40px;font-size:12px;color:#6a6a6a;text-align:center}
+/* === THEME: Sun & Adobe === */
+:root{
+  --sand:#f3ecdf;
+  --accent:#a34c2f;         /* adobe clay */
+  --gold:#e3b341;
+  --ink:#2f2a24;
+  --ink-soft:#5b5248;
+}
+
+/* header gradient replaces maroon */
+.cover{
+  background: linear-gradient(180deg, rgba(163,76,47,.96), rgba(163,76,47,.88));
+}
+
+/* buttons follow accent */
+.btn{ border-color: var(--accent); background: var(--accent); }
+.btn.alt{ color: var(--accent); border-color: var(--accent); }
+
+/* section underline + dividers */
+.section h2{ border-bottom-color: var(--accent); }
+.divider{ background: linear-gradient(90deg,transparent,var(--gold),transparent); }
+
+/* cards on warm sand */
+.page, .section{ background: var(--sand); }
+.card h3{ color: var(--accent); }
+
 @media print{
   html,body{background:var(--sand)}
   .toolbar{display:none!important}
