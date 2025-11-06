@@ -1,0 +1,35 @@
+/* === THEME: Sun & Adobe === */
+:root{
+  --sand:#f3ecdf;
+  --accent:#a34c2f;         /* adobe clay */
+  --gold:#e3b341;
+  --ink:#2f2a24;
+  --ink-soft:#5b5248;
+}
+
+/* header gradient replaces maroon */
+.cover{
+  background: linear-gradient(180deg, rgba(163,76,47,.96), rgba(163,76,47,.88));
+}
+
+/* buttons follow accent */
+.btn{ border-color: var(--accent); background: var(--accent); }
+.btn.alt{ color: var(--accent); border-color: var(--accent); }
+
+/* section underline + dividers */
+.section h2{ border-bottom-color: var(--accent); }
+.divider{ background: linear-gradient(90deg,transparent,var(--gold),transparent); }
+
+/* cards on warm sand */
+.page, .section{ background: var(--sand); }
+.card h3{ color: var(--accent); }
+
+@media print{
+  html,body{background:var(--sand)}
+  .toolbar{display:none!important}
+  .page{box-shadow:none;border-radius:0;margin:0}
+  body,.cover{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .section h2{border-color:var(--accent)}
+  .divider{background:var(--gold)}
+  .page-break{break-after:page}
+}
