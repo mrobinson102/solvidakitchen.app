@@ -5,41 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sol Vida Kitchen – Updates & Menu</title>
 
-  <!-- Sun & Adobe palette + fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#a34c2f" />
 
   <style>
     :root{
-      /* Sun & Adobe */
-      --sand:#f3ecdf; 
-      --accent:#a34c2f;       /* adobe clay */
-      --gold:#e3b341; 
-      --ink:#2f2a24; 
-      --ink-soft:#5b5248;
+      --sand:#f3ecdf; --accent:#a34c2f; --gold:#e3b341; --ink:#2f2a24; --ink-soft:#5b5248;
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0}
     body{
       font-family:'Lato',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      background:var(--sand);
-      color:var(--ink);
+      background:var(--sand); color:var(--ink);
       display:grid; place-items:center; padding:24px;
     }
     .wrap{
       width:min(980px,100%); background:var(--sand);
-      border:1px solid rgba(0,0,0,.06);
-      box-shadow:0 12px 28px rgba(0,0,0,.06);
+      border:1px solid rgba(0,0,0,.06); box-shadow:0 12px 28px rgba(0,0,0,.06);
       border-radius:18px; overflow:hidden;
     }
     .cover{
       padding:56px 40px;
-      background:linear-gradient(180deg, rgba(163,76,47,.96), rgba(163,76,47,.88)); /* adobe */
+      background:linear-gradient(180deg, rgba(163,76,47,.96), rgba(163,76,47,.88));
       color:#fff; text-align:center;
     }
     .logo{
       width:120px;height:120px;margin:0 auto 16px;border-radius:999px;
-      background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.25);
+      background:url("/assets/sol-vida-logo.png") center/cover no-repeat;   /* <-- fixed */
+      border:1px solid rgba(255,255,255,.25);
       display:grid;place-items:center;font-family:'Playfair Display',serif;letter-spacing:.4px;
     }
     h1{font-family:'Playfair Display',serif;font-weight:700;font-size:40px;margin:8px 0 4px}
@@ -47,9 +40,7 @@
     .body{padding:28px 34px}
     h2{font-family:'Playfair Display',serif;font-weight:700;margin:0 0 10px}
     p{margin:8px 0;color:var(--ink-soft)}
-    .cta{
-      margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;
-    }
+    .cta{ margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
     .btn{
       appearance:none; border-radius:999px; border:1px solid var(--accent);
       padding:12px 18px; font-weight:700; letter-spacing:.2px; cursor:pointer;
@@ -63,7 +54,7 @@
 <body>
   <div class="wrap">
     <section class="cover">
-      <div class="logo" id="logo">LOGO</div>
+      <div class="logo" id="logo"></div>
       <h1>Sol Vida Kitchen™</h1>
       <p class="sub">Project Updates • Menu • Flavor System</p>
     </section>
@@ -83,28 +74,12 @@
       <div class="divider"></div>
 
       <h2>For Crew</h2>
-      <p>
-        Print tip: in Chrome, enable <strong>Background graphics</strong> to keep the
-        Sun & Adobe theme on paper.
-      </p>
+      <p>Print tip: in Chrome, enable <strong>Background graphics</strong> to keep the Sun & Adobe theme on paper.</p>
     </section>
 
     <footer>
       © 2025 Sol Vida Kitchen LLC • Sol Vida Kitchen™ | Deming, NM | Confidential – Internal Use Only
     </footer>
   </div>
-
-  <script>
-    // Swap in your real logo if present at docs/assets/sol-vida-logo.png
-    const logo = document.getElementById('logo');
-    const imgPath = './assets/sol-vida-logo.png';
-    const img = new Image();
-    img.onload = () => {
-      logo.style.background = `url('${imgPath}') center/cover no-repeat`;
-      logo.style.border = 'none';
-      logo.textContent = '';
-    };
-    img.src = imgPath;
-  </script>
 </body>
 </html>
