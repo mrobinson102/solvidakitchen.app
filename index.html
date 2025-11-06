@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sol Vida Kitchen – Updates & Menu</title>
 
-  <!-- Earth & Warm palette + fonts -->
+  <!-- Sun & Adobe palette + fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#7c0e0c" />
+  <meta name="theme-color" content="#a34c2f" />
 
   <style>
     :root{
-      --sand:#f9f4ed; --maroon:#7c0e0c; --gold:#d4b272; --ink:#2b2b2b; --ink-soft:#5a5a5a;
+      /* Sun & Adobe */
+      --sand:#f3ecdf; 
+      --accent:#a34c2f;       /* adobe clay */
+      --gold:#e3b341; 
+      --ink:#2f2a24; 
+      --ink-soft:#5b5248;
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0}
@@ -29,7 +34,7 @@
     }
     .cover{
       padding:56px 40px;
-      background:linear-gradient(180deg, rgba(124,14,12,.94), rgba(124,14,12,.88));
+      background:linear-gradient(180deg, rgba(163,76,47,.96), rgba(163,76,47,.88)); /* adobe */
       color:#fff; text-align:center;
     }
     .logo{
@@ -46,11 +51,11 @@
       margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;
     }
     .btn{
-      appearance:none; border-radius:999px; border:1px solid var(--maroon);
+      appearance:none; border-radius:999px; border:1px solid var(--accent);
       padding:12px 18px; font-weight:700; letter-spacing:.2px; cursor:pointer;
-      background:var(--maroon); color:#fff; text-decoration:none;
+      background:var(--accent); color:#fff; text-decoration:none;
     }
-    .btn.alt{background:transparent; color:var(--maroon)}
+    .btn.alt{background:transparent; color:var(--accent); border-color:var(--accent)}
     .divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px 0}
     footer{padding:18px 34px 28px; font-size:12px; color:#6a6a6a; text-align:center}
   </style>
@@ -71,9 +76,7 @@
       </p>
 
       <div class="cta">
-        <!-- Opens your new printed menu page -->
         <a class="btn" href="./menu.html">View & Print Menu</a>
-        <!-- Link to your main marketing site -->
         <a class="btn alt" href="https://solvidakitchen.com" target="_blank" rel="noopener">Visit Main Site</a>
       </div>
 
@@ -81,8 +84,8 @@
 
       <h2>For Crew</h2>
       <p>
-        Print tip: in Chrome, enable <strong>Background graphics</strong> to keep the sand
-        and maroon theme on paper.
+        Print tip: in Chrome, enable <strong>Background graphics</strong> to keep the
+        Sun & Adobe theme on paper.
       </p>
     </section>
 
