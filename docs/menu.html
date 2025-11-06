@@ -8,31 +8,38 @@
   <meta name="theme-color" content="#a34c2f" />
   <style>
     :root{--sand:#f3ecdf;--accent:#a34c2f;--gold:#e3b341;--ink:#2f2a24;--ink-soft:#5b5248;}
-    *{box-sizing:border-box}body{margin:0;font-family:'Lato',sans-serif;background:var(--sand);color:var(--ink);}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Lato',sans-serif;background:var(--sand);color:var(--ink);}
     header{background:linear-gradient(180deg,rgba(163,76,47,.95),rgba(163,76,47,.9));color:#fff;text-align:center;padding:60px 20px;}
-    .logo{width:120px;height:120px;margin:0 auto 16px;border-radius:999px;background:url("/docs/assets/sol-vida-logo.png") center/cover no-repeat;border:1px solid rgba(255,255,255,.3);}
+    .logo{width:120px;height:120px;margin:0 auto 16px;border-radius:999px;
+      background:url("./assets/sol-vida-logo.png") center/cover no-repeat;
+      border:1px solid rgba(255,255,255,.3);}
     h1{font-family:'Playfair Display',serif;margin:8px 0 4px;font-size:40px;}
+    .tag{opacity:.95}
     main{max-width:900px;margin:40px auto;padding:0 20px;}
     h2{font-family:'Playfair Display',serif;color:var(--accent);margin-top:40px;}
-    ul{list-style:none;padding:0;}
-    li{margin-bottom:16px;border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:12px;}
+    ul{list-style:none;padding:0;margin:0}
+    li{margin-bottom:16px;border-bottom:1px solid rgba(0,0,0,.1);padding:0 0 12px 0;}
     li strong{font-size:18px;color:var(--accent);}
     footer{text-align:center;padding:30px 10px;font-size:13px;color:var(--ink-soft);}
   </style>
 </head>
 <body>
   <header>
-    <div class="logo"></div>
+    <div class="logo" aria-label="Sol Vida Kitchen logo"></div>
     <h1>Sol Vida Kitchen™</h1>
-    <p>Fresh • Plant-Based • Earth & Adobe Inspired</p>
+    <p class="tag">Fresh • Plant-Based • Heritage Grains & Legumes</p>
   </header>
 
   <main>
     <h2>🌿 Signature Bowls</h2>
     <ul>
       <li><strong>Caribbean Gungo Pea Stew</strong><br>Slow-simmered island-style peas, spiced broth, and golden grains.</li>
+
       <li><strong>Smoky Chickpea & Millet Bowl</strong><br>Roasted chickpeas, citrus tahini, and fresh local greens.</li>
-      <li><strong>Southwest Grain Bowl</strong><br>Black beans, corn, roasted sweet potato, and lime tahini.</li>
+
+      <li><strong>Adobe Sorghum Grain Bowl</strong><br>Sorghum, black beans, roasted sweet potato, kale, and lime tahini.
+        <em>(No corn. No white potatoes.)</em></li>
     </ul>
 
     <h2>🥙 Wraps & Handhelds</h2>
